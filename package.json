@@ -1,0 +1,10 @@
+{
+  "name": "darenzammit",
+  "version": "1.0.0",
+  "description": "My Personal Blog",
+  "author": "Daren Zammit",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta"
+  }
+}
