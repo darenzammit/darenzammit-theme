@@ -10,6 +10,27 @@ License URI: LICENSE
 Text Domain: darenzammit
 */
 
-@import  'variables';
+
+/**
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+ */
+
+@import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap-reboot';
 
+
+.site-content,
+.site-header .container,
+.site-footer .container{
+    @include make-container();
+    @include make-container-max-widths((sm: 540px, md: 720px));
+}
+
+.site-header .container,
+.site-footer .container{
+	@include make-container-max-widths((lg: 960px,xl: 1140px));
+}

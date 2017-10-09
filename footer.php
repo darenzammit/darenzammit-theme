@@ -14,7 +14,7 @@
 	</div>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+		<div class="container">
 			&copy; <?php echo Date('Y') ?> <a href="<?php echo home_url() ?>">Daren Zammit</a>
 		</div>
 	</footer>
