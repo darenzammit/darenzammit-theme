@@ -1,15 +1,3 @@
-/*!
-Theme Name: darenzammit
-Theme URI: https://darenzammit.com
-Author: Daren Zammit
-Author URI: https://darenzammit.com
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: darenzammit
-*/
-
 // @include media-breakpoint-up(xs) { ... }
 // @include media-breakpoint-up(sm) { ... }
 // @include media-breakpoint-up(md) { ... }
@@ -21,7 +9,10 @@ Text Domain: darenzammit
 
 //vendor
 @import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/buttons';
 
 //project styles
 @import "layout";
 @import 'type';
+@import 'entry';
+@import 'drip';

@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){$("html").addClass("js");var e=setInterval(function(){0!==Object.keys(_dcq).length&&($("style:last-of-type","head").remove(),clearInterval(e))},1);setTimeout(function(){_dcq.push(["showForm",{id:"862837615"}])},2e3)});

@@ -33,10 +33,10 @@
 		"oAP": "\/components\/content-page.php",
 		"oF": 0
 		},
-	"\/components\/content-search.php": {
+	"\/components\/content-summary.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/content-search.php",
+		"oAP": "\/components\/content-summary.php",
 		"oF": 0
 		},
 	"\/components\/content.php": {
@@ -57,6 +57,38 @@
 		"oAP": "\/components\/entry-meta.php",
 		"oF": 0
 		},
+	"\/components\/footer-scripts.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/footer-scripts.php",
+		"oF": 0
+		},
+	"\/components\/recent-posts.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/recent-posts.php",
+		"oF": 0
+		},
+	"\/dist\/css\/admin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/css\/admin-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/dist\/css\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -75,10 +107,34 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/admin.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/admin.php",
+		"oF": 0
+		},
 	"\/inc\/customizer.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/inc\/filters.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/filters.php",
+		"oF": 0
+		},
+	"\/inc\/setup.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/setup.php",
+		"oF": 0
+		},
+	"\/inc\/shortcodes.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/shortcodes.php",
 		"oF": 0
 		},
 	"\/inc\/template-tags.php": {
@@ -164,6 +220,32 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/scss\/_drip.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_drip.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_entry.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_entry.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -173,6 +255,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_prism.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_prism.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -203,7 +298,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/style.scss": {
+	"\/scss\/admin.scss": {
 		"aP": 1,
 		"bl": 1,
 		"dP": 10,
@@ -211,9 +306,22 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/style.css",
+		"oAP": "\/dist\/css\/admin.css",
 		"oF": 2,
 		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/main.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/dist\/css\/main.css",
+		"oF": 2,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/search.php": {
@@ -234,6 +342,16 @@
 		"oAP": "\/single.php",
 		"oF": 0
 		},
+	"\/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -243,6 +361,12 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/todo.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/todo.txt",
+		"oF": 0
 		},
 	"\/yarn.lock": {
 		"ft": 8192,

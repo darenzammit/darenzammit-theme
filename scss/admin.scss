@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300i,400,700|Lora:400,400i');
+
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import 'type';
+
+.mce-content-body {
+    margin: 20px auto;
+    max-width: 720px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: $headings-line-height;
+    }
+
+    &.post-type-post {
+        p:first-child {
+            font-size: $font-size-lg;
+            &:first-letter {
+                color: $theme-color;
+                font-size: 4rem;
+                font-family: $headings-font-family;
+                font-weight: $headings-font-weight;
+                float: left;
+                line-height: 0.75;
+                margin: 0.5rem 0.66rem 0 0;
+            }
+        }
+    }
+
+    a {
+        border-bottom: 1px solid $theme-color;
+        font-style: italic;
+        padding-bottom: 3px;
+    }
+}

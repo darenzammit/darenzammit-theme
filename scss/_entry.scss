@@ -1,0 +1,161 @@
+@import "prism";
+
+.entry {
+
+    &-single {
+        @include clearfix();
+    }
+
+    +.entry {
+        border-top: $theme-border;
+        padding-top: $spacer;
+    }
+
+    &-header {
+        .single-post & {
+            margin-left: $entry-media-offset * -1;
+            margin-right: $entry-media-offset * -1;
+            margin-bottom: $spacer * 2;
+            text-align: center;
+            &:after {
+                content: " ";
+                display: inline-block;
+                width: $spacer * 3;
+                border-bottom: $theme-border-accent;
+            }
+        }
+        h3.entry-title {
+            margin-bottom: $spacer-sm;
+            a {
+                color: $body-color;
+            }
+        }
+    }
+
+    &-meta {
+        font-family: $font-family-sans-serif;
+        font-size: $font-size-sm;
+        margin-bottom: $spacer;
+    }
+
+    &-content {
+
+        p:first-of-type {
+            font-size: $font-size-lg;
+            &:first-letter {
+                .single-post & {
+                    color: $theme-color;
+                    font-size: 4rem;
+                    font-family: $headings-font-family;
+                    font-weight: $headings-font-weight;
+                    font-style: normal;
+                    float: left;
+                    line-height: 0.75;
+                    margin: 0.5rem 0.66rem 0 0;
+                }
+            }
+        }
+
+        a {
+            border-bottom: 1px solid $theme-color;
+            font-style: italic;
+            padding-bottom: 3px;
+        }
+
+        /**
+         * Lists
+         */
+        ol,
+        ul,
+        dl {
+            margin-top: 0;
+            margin-bottom: $paragraph-margin-bottom;
+        }
+        ol ol,
+        ul ul,
+        ol ul,
+        ul ol {
+            margin-bottom: 0;
+        }
+
+        /**
+         * Tables
+         */
+        table {
+            font-family: $font-family-sans-serif;
+            font-size: $font-size-sm;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: $spacer;
+            background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+            border: $table-border-width solid $table-border-color;
+
+            th,
+            td {
+                padding: $table-cell-padding;
+                vertical-align: top;
+                border-top: $table-border-width solid $table-border-color;
+            }
+
+            thead th {
+                vertical-align: bottom;
+                border-bottom: (2 * $table-border-width) solid $table-border-color;
+            }
+
+            tbody+tbody {
+                border-top: (2 * $table-border-width) solid $table-border-color;
+            }
+        }
+
+        /**
+         * Images
+         */
+        img {
+            display: block;
+            height: auto;
+            margin: $spacer auto;
+        }
+        .alignnone,
+        .wp-caption img {
+            max-width: 100%;
+        }
+        .alignleft,
+        .alignright {
+            max-width: 60%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            .alignleft {
+                float: left;
+                padding: $spacer-sm $spacer $spacer-sm 0;
+                margin-left: $entry-media-offset * -1;
+            }
+            .alignright {
+                float: right;
+                padding: $spacer-sm 0 $spacer-sm $spacer;
+                margin-right: $entry-media-offset * -1;
+            }
+        }
+
+        .aligncenter {
+            max-width: calc(100% + #{$entry-media-offset*2});
+            margin-left: $entry-media-offset * -1;
+            margin-right: $entry-media-offset * -1;
+            .wp-caption-text {
+                padding-left: $spacer;
+                padding-right: $spacer;
+            }
+        }
+        .wp-caption-text {
+            font-family: $font-family-sans-serif;
+            font-size: 0.7rem;
+            padding-top: $spacer-sm;
+            text-align: center;
+            color: $gray-600;
+        }
+
+         :last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

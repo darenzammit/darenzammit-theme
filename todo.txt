@@ -1,0 +1,25 @@
+Add image styles - left, right, center
+I like the medium.com left/right style with negative margin
+Not sure about the central images, some do them wider than the text, others aligned - medium does both.
+See if you need a bigger container to achieve bigger images or else maybe a negative margine could do.
+
+Stylise all possible content including embeds - Twitter, FB, github, instagram and pinterest
+
+Add Prism.js - try to get a theme similar to material theme for prism - in case I do videos it would look consistent
+
+Style header and footer
+
+I like an overlayed D + Z with multicolours
+
+Consider using a very light grey instead of white for BG
+
+Add email optin - this must be there on day 1
+
+About me / Front
+
+Contact page - no form
+
+Add 3 posts and launch
+
+
+

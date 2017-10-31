@@ -1,71 +1,97 @@
+//Font Size
+html {
+    font-size: 16px;
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+}
+
 //
 // Headings
 //
-
-h1, h2, h3, h4, h5, h6{
-  margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: $headings-margin-bottom;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: $headings-color;
 }
 
-h1{ font-size: $h1-font-size; }
-h2{ font-size: $h2-font-size; }
-h3{ font-size: $h3-font-size; }
-h4{ font-size: $h4-font-size; }
-h5{ font-size: $h5-font-size; }
-h6{ font-size: $h6-font-size; }
+h1 {
+    font-size: $h1-font-size-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $h1-font-size;
+    }
+}
+
+h2 {
+    font-size: $h2-font-size-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $h2-font-size;
+    }
+}
+
+h3 {
+    font-size: $h3-font-size-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $h3-font-size;
+    }
+}
+
+h4 {
+    font-size: $h4-font-size-sm;
+    @include media-breakpoint-up(md) {
+        font-size: $h4-font-size;
+    }
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
 
 //
 // Horizontal rules
 //
-
+//
 hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: $hr-border-width solid $hr-border-color;
 }
 
 
 //
 // Emphasis
 //
-
-small{
-  font-size: $small-font-size;
-  font-weight: $font-weight-normal;
+small {
+    font-size: $small-font-size;
+    font-weight: $font-weight-normal;
 }
 
 mark {
-  padding: $mark-padding;
-  background-color: $mark-bg;
+    padding: $mark-padding;
+    background-color: $mark-bg;
 }
 
 
 //
 // Misc
 //
-
-
 // Blockquotes
-.blockquote {
-  margin-bottom: $spacer;
-  font-size: $blockquote-font-size;
-}
-
-.site-content{
-  ol,
-  ul,
-  dl {
-    margin-top: 0;
-    margin-bottom: $paragraph-margin-bottom;
-  }
-  ol ol,
-  ul ul,
-  ol ul,
-  ul ol {
-    margin-bottom: 0;
-  }
+blockquote {
+    margin-bottom: $spacer;
+    font-size: $blockquote-font-size;
+    font-family: $headings-font-family;
+    font-weight: 300;
+    font-style: italic;
 }

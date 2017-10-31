@@ -11,7 +11,9 @@
 
 ?>
 
-	</div>
+	</section>
+
+	<?php get_template_part('components/recent-posts'); ?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="container">
