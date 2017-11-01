@@ -86,9 +86,9 @@ select.form-control {
 .newsletter-form {
 
     .single-post & {
-        margin: $spacer*3 $spacer*2 $spacer*2;
+        margin: $spacer*3 $spacer;
         @include media-breakpoint-up(md){
-          margin: $spacer*2 0 0 0;
+          margin: $spacer*3 0 0 0;
         }
     }
 

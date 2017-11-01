@@ -7,7 +7,7 @@
 					<a href="<?php the_permalink() ?>">
 						<?php
 						get_template_part('components/entry', 'meta');
-						the_title( '<h4>', '</h4>' );
+						the_title( '<h5>', '</h5>' );
 						?>
 					</a>
 				</div>
