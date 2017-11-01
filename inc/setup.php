@@ -11,6 +11,7 @@ add_action('after_setup_theme', function () {
 
 	register_nav_menus(array(
 		'primary' => esc_html__('Primary', 'darenzammit'),
+		'footer' => esc_html__('Footer', 'darenzammit'),
 	));
 
 	add_theme_support('html5', array(
