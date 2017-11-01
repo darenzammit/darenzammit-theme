@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
     var _di = setInterval(function() {
         if (Object.keys(_dcq).length !== 0) {
-            $('style:last-of-type','head').remove();
+            $('style:last-of-type:not(#theme-style)','head').remove();
 			clearInterval(_di);
         }
     }, 1);

@@ -34,36 +34,6 @@
 
 .drip-lightbox h1,
 .drip-lightbox h2,
-.drip-lightbox h3,
-.drip-lightbox div,
-.drip-lightbox dl,
-.drip-lightbox dt,
-.drip-lightbox dd,
-.drip-lightbox p,
-.drip-lightbox a,
-.drip-lightbox .drip-text-field,
-.drip-lightbox .drip-text-field:focus,
-.drip-lightbox .drip-submit-button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    float: none;
-    width: auto;
-    background-image: none;
-    letter-spacing: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -webkit-text-shadow: none !important;
-    -moz-text-shadow: none !important;
-    text-shadow: none !important;
-}
-
-.drip-lightbox h1,
-.drip-lightbox h2,
 .drip-lightbox h3 {
     margin-bottom: $headings-margin-bottom;
     font-family: $headings-font-family;
@@ -434,27 +404,6 @@
 }
 
 .drip-lightbox .drip-submit-button {
-    padding: 6px 26px !important;
-    color: #ffffff !important;
-    font-weight: bold !important;
-    line-height: 1.6 !important;
-    border: 0 !important;
-    cursor: pointer !important;
-    background-image: none !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    height: auto;
-    transition: background 0.2s ease !important;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
-    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
-    border-radius: 0;
-}
-
-.drip-lightbox .drip-submit-button:hover {
-    background-image: none !important;
-}
-
-.drip-lightbox .drip-submit-button:active {
-    background-image: none !important;
+    @extend .btn;
+    @extend .btn-primary;
 }
