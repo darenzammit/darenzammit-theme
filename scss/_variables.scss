@@ -27,11 +27,13 @@ $cyan : #17a2b8;
 
 $theme-colors: (
   primary: $blue,
-  secondary: $gray-600
+  secondary: $red
 );
 
 $spacer: 1.5rem;
 $spacer-sm: 0.5rem;
+
+$enable-rounded: false;
 
 $paragraph-margin-bottom: $spacer;
 $headings-margin-bottom: $spacer;
@@ -57,13 +59,14 @@ $entry-media-offset: 100px;
 $theme-color: map-get($theme-colors, 'primary');
 $theme-border: 1px solid $gray-300;
 $theme-border-accent: 6px solid $theme-color;
+$input-border-color: $gray-300;
 
 $body-bg:       $white;
 $body-color:    $gray-800;
 
 $link-hover-decoration: none;
-
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
-$input-btn-border-width: 0;
-$enable-rounded: false;
+
+$form-feedback-valid-color:   $green;
+$form-feedback-invalid-color: $red;

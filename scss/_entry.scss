@@ -13,8 +13,10 @@
 
     &-header {
         .single-post & {
-            margin-left: $entry-media-offset * -1;
-            margin-right: $entry-media-offset * -1;
+            @include media-breakpoint-up(md){
+                margin-left: $entry-media-offset * -1;
+                margin-right: $entry-media-offset * -1;
+            }
             margin-bottom: $spacer * 2;
             text-align: center;
             &:after {
@@ -40,7 +42,7 @@
 
     &-content {
 
-        p:first-of-type {
+        > p:first-of-type {
             font-size: $font-size-lg;
             &:first-letter {
                 .single-post & {

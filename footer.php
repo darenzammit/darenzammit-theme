@@ -17,7 +17,8 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container">
-			&copy; <?php echo Date('Y') ?> <a href="<?php echo home_url() ?>">Daren Zammit</a>
+			<div>&copy; <?php echo Date('Y') ?> - <a href="<?php echo home_url() ?>">Daren Zammit</a></div>
+			<?php wp_nav_menu( array('theme_location' => 'primary') );?>
 		</div>
 	</footer>
 

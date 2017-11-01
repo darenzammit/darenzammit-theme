@@ -1,4 +1,3 @@
-<!-- Drip -->
 <script type="text/javascript">
   var _dcq = _dcq || [];
   var _dcs = _dcs || {};
@@ -11,6 +10,5 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(dc, s);
   })();
-  
+
 </script>
-<!-- end Drip -->
