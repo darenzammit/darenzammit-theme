@@ -135,8 +135,8 @@
                 @extend .btn;
                 @include button-variant($white, $white, $theme-color, $theme-color);
                 color: $body-color;
+                @include transition(all .1s ease-out);
                 &:hover {
-                    @include transition(transform .1s ease-out);
                     @include color-yiq($theme-color);
                     transform: scale(1.1);
                 }

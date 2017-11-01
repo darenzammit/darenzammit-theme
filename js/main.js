@@ -15,8 +15,8 @@ jQuery(document).ready(function($) {
         }
     }, 1);
 
-    setTimeout(function() {
-        _dcq.push(["showForm", { id: "862837615" }]);
-    }, 2000);
+    // setTimeout(function() {
+    //     _dcq.push(["showForm", { id: "862837615" }]);
+    // }, 2000);
 
 });
