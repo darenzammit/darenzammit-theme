@@ -11,7 +11,7 @@ add_action('after_setup_theme', function () {
 
 	register_nav_menus(array(
 		'primary' => esc_html__('Primary', 'darenzammit'),
-		'footer' => esc_html__('Footer', 'darenzammit'),
+		'footer'  => esc_html__('Footer', 'darenzammit'),
 	));
 
 	add_theme_support('html5', array(
@@ -70,13 +70,12 @@ add_action('wp_enqueue_scripts', function () {
 
 	wp_deregister_style('prism-theme');
 
-	$v= time();
+	$v = time();
 
 	wp_enqueue_style('darenzammit-fonts', 'https://fonts.googleapis.com/css?family=Libre+Franklin:300i,400,700|Lora:400,400i', [], null);
-	wp_enqueue_style('darenzammit-style', get_template_directory_uri() . '/dist/css/main.css', [], $v);
-	// wp_enqueue_script('darenzammit-navigation', get_template_directory_uri() . '/js/navigation.js', array(), $v, true);
-	// wp_enqueue_script('darenzammit-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), $v, true);
-	wp_enqueue_script('darenzammit-main', get_template_directory_uri() . '/js/main.js', ['jquery'], $v, true);
+	// wp_enqueue_style('darenzammit-style', get_template_directory_uri() . '/dist/css/main.css', [], $v);
+
+	wp_enqueue_script('darenzammit-main', get_template_directory_uri() . '/dist/js/main.js', ['jquery'], $v, true);
 
 	//theme script
 
@@ -86,8 +85,14 @@ add_action('wp_enqueue_scripts', function () {
 	// 	wp_enqueue_script('comment-reply');
 	// }
 	//
-},100);
+}, 100);
 
-add_action( 'wp_footer', function(){
-get_template_part( 'components/footer', 'scripts' );
-},100);
+add_action('wp_head', function () {
+	if ($css = file_get_contents(get_template_directory() . '/dist/css/main.css')) {
+		echo sprintf('<style type="text/css" id="theme-style">%s</style>', $css);
+	}
+});
+
+add_action('wp_footer', function () {
+	get_template_part('components/footer', 'scripts');
+}, 100);
