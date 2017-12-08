@@ -2,6 +2,7 @@
 
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import "mixins/entry";
 @import 'type';
 
 .mce-content-body {
@@ -20,15 +21,6 @@
     &.post-type-post {
         p:first-child {
             font-size: $font-size-lg;
-            &:first-letter {
-                color: $theme-color;
-                font-size: 4rem;
-                font-family: $headings-font-family;
-                font-weight: $headings-font-weight;
-                float: left;
-                line-height: 0.75;
-                margin: 0.5rem 0.66rem 0 0;
-            }
         }
     }
 
@@ -36,5 +28,11 @@
         border-bottom: 1px solid $theme-color;
         font-style: italic;
         padding-bottom: 3px;
+    }
+
+    @include entry-images();
+
+    code{
+        display: inline-block;
     }
 }

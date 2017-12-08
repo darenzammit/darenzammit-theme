@@ -6,6 +6,7 @@
 // }
 
 jQuery(document).ready(function($) {
+    
     $('html').addClass('js');
 
     var _di = setInterval(function() {

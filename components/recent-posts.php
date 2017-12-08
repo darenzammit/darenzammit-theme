@@ -1,4 +1,4 @@
-<?php if ($posts=get_posts(['posts_per_page'=>3, 'post__not_in' => [get_the_ID()]])): ?>
+<?php if (!is_home() && $posts=get_posts(['posts_per_page'=>3, 'post__not_in' => [get_the_ID()]])): ?>
 	<section class="recent-posts">
 		<h4>Recent Articles</h4>
 		<div class="recent-posts-cards">

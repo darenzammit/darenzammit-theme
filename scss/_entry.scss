@@ -47,13 +47,15 @@
             &:first-letter {
                 .single-post & {
                     color: $theme-color;
-                    font-size: 4rem;
+                    font-size: 1.5rem;
                     font-family: $headings-font-family;
                     font-weight: $headings-font-weight;
                     font-style: normal;
                     float: left;
-                    line-height: 0.75;
-                    margin: 0.5rem 0.66rem 0 0;
+                    line-height: 0.6;
+                    margin: 0.5rem 1rem 0 0;
+                    border: 4px solid $theme-color;
+                    padding: 15px 14px;
                 }
             }
         }
@@ -109,54 +111,9 @@
             }
         }
 
-        /**
-         * Images
-         */
-        img {
-            display: block;
-            height: auto;
-            margin: $spacer auto;
-        }
-        .alignnone,
-        .wp-caption img {
-            max-width: 100%;
-        }
-        .alignleft,
-        .alignright {
-            max-width: 60%;
-        }
+        @include entry-images();
 
-        @include media-breakpoint-up(lg) {
-            .alignleft {
-                float: left;
-                padding: $spacer-sm $spacer $spacer-sm 0;
-                margin-left: $entry-media-offset * -1;
-            }
-            .alignright {
-                float: right;
-                padding: $spacer-sm 0 $spacer-sm $spacer;
-                margin-right: $entry-media-offset * -1;
-            }
-        }
-
-        .aligncenter {
-            max-width: calc(100% + #{$entry-media-offset*2});
-            margin-left: $entry-media-offset * -1;
-            margin-right: $entry-media-offset * -1;
-            .wp-caption-text {
-                padding-left: $spacer;
-                padding-right: $spacer;
-            }
-        }
-        .wp-caption-text {
-            font-family: $font-family-sans-serif;
-            font-size: 0.7rem;
-            padding-top: $spacer-sm;
-            text-align: center;
-            color: $gray-600;
-        }
-
-         :last-child {
+        :last-child {
             margin-bottom: 0px;
         }
     }

@@ -11,6 +11,9 @@
 @import '../node_modules/bootstrap/scss/bootstrap-reboot';
 @import '../node_modules/bootstrap/scss/buttons';
 
+//project mixins
+@import "mixins/entry";
+
 //project styles
 @import "layout";
 @import 'type';
