@@ -115,7 +115,11 @@ select.form-control {
 
 .search-form{
     display: flex;
+    border: 1px solid $theme-color;
     &-input{
         flex:1;
+        .form-control{
+            border-color: $theme-color;
+        }
     }
 }
