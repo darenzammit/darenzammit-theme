@@ -112,3 +112,10 @@ select.form-control {
         }
     }
 }
+
+.search-form{
+    display: flex;
+    &-input{
+        flex:1;
+    }
+}

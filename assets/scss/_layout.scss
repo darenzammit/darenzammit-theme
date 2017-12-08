@@ -246,3 +246,10 @@
         border-radius: 0;
     }
 }
+
+.error404{
+    .site-content{
+        text-align:center;
+        @include make-container-max-widths((sm: 540px));
+    }
+}

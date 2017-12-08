@@ -236,6 +236,13 @@
 		"oAP": "\/components\/recent-posts.php",
 		"oF": 0
 		},
+	"\/components\/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/searchform.php",
+		"oF": 0
+		},
 	"\/dist\/css\/admin.css": {
 		"aP": 1,
 		"bl": 0,

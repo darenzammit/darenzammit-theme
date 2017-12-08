@@ -8,25 +8,12 @@
  */
 
 get_header(); ?>
-
 	<main id="main" class="site-main">
-
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'darenzammit' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'darenzammit' ); ?></p>
-
-				<?php get_search_form();?>
-				<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-				<?php the_widget( 'WP_Widget_Archives' ); ?>
-
-			</div><!-- .page-content -->
+		<section class="entry-content error-404 not-found">
+			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'darenzammit' ); ?></h1>
+			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'darenzammit' ); ?></p>
+			<?php get_search_form();?>
 		</section><!-- .error-404 -->
-
 	</main><!-- #main -->
-
 <?php
 get_footer();
