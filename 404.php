@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-	<main id="main" class="site-main">
+	<main id="main" class="container">
 		<section class="entry-content error-404 not-found">
 			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'darenzammit' ); ?></h1>
 			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'darenzammit' ); ?></p>
