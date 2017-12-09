@@ -1,41 +1,41 @@
-@mixin entry-images(){
-	/**
+@mixin entry-images() {
+    /**
          * Images
          */
-        img {
-            display: block;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
+    img {
+        display: block;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .alignnone,
+    .aligncenter,
+    .wp-caption img {
+        max-width: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        .alignleft,
+        .alignright,
+        .wp-caption.alignleft .wp-caption.alignright {
+            max-width: 60%!important;
+            margin: $spacer auto;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .alignleft {
+            float: left;
+            padding: $spacer-sm $spacer $spacer-sm 0;
+            margin: 0 0 0 $entry-media-offset * -1;
+        }
+        .alignright {
+            float: right;
+            padding: $spacer-sm 0 $spacer-sm $spacer;
+            margin: 0 $entry-media-offset * -1 0 0;
         }
 
-        .alignnone,
-        .wp-caption img {
-            max-width: 100%;
-        }
-
-        @include media-breakpoint-up(md) {
-            .alignleft,
-            .alignright,
-            .wp-caption.alignleft
-            .wp-caption.alignright{
-                max-width: 60%!important;
-                margin: $spacer auto;
-            }
-        }
-
-        @include media-breakpoint-up(lg) {
-            .alignleft {
-                float: left;
-                padding: $spacer-sm $spacer $spacer-sm 0;
-                margin: 0 0 0 $entry-media-offset * -1;
-            }
-            .alignright {
-                float: right;
-                padding: $spacer-sm 0 $spacer-sm $spacer;
-                margin: 0 $entry-media-offset * -1 0 0;
-            }
-        }
 
         .aligncenter {
             max-width: calc(100% + #{$entry-media-offset*2});
@@ -46,12 +46,13 @@
                 padding-right: $spacer;
             }
         }
+    }
 
-        .wp-caption-text {
-            font-family: $font-family-sans-serif;
-            font-size: 0.7rem;
-            padding-top: $spacer-sm;
-            text-align: center;
-            color: $gray-600;
-        }
+    .wp-caption-text {
+        font-family: $font-family-sans-serif;
+        font-size: 0.7rem;
+        padding-top: $spacer-sm;
+        text-align: center;
+        color: $gray-600;
+    }
 }
