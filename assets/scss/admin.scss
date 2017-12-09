@@ -32,7 +32,19 @@
 
     @include entry-images();
 
-    code{
-        display: inline-block;
+    code {
+        display: block;
+        padding: 10px;
+        text-shadow: none;
+        font-weight: normal;
+        font-size: 0.75rem;
+        font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+        direction: ltr;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 1.6em;
     }
 }

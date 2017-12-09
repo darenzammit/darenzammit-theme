@@ -108,7 +108,7 @@ select.form-control {
     .form-row {
         .col:nth-child(1),
         .col:nth-child(2) {
-            flex: 1;
+            flex: 1 0 auto;
         }
     }
 }
